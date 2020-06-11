@@ -1,0 +1,7 @@
+<hr color='red'>
+<h1>Instruments</h1>
+<hr color='red'>
+<ul><h3>
+<% @instruments.each do |i| %>
+<li>Instrument: <%=i.name%> --------Classification: <%=i.classification%></li>
+<% end %>

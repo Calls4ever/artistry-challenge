@@ -1,0 +1,8 @@
+<hr color='red'>
+<h1>Atists</h1>
+<hr color='red'>
+<ul>
+<% @artists.each do |a| %>
+<li><%= link_to  a.name, artist_path(a.id) %></li>
+<% end %>
+</ul>

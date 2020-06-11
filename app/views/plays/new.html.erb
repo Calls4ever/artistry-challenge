@@ -1,0 +1,12 @@
+<hr color='red'>
+<h1>Artist, Pick An Instrument</h1>
+<hr color='red'>
+
+<%= form_for @play do |f| %>
+<%=f.collection_select :artist_id, @artists, :id, :name %>
+<%=f.collection_select :instrument_id, @instruments, :id, :name %>
+<%= f.submit :"Connect Instrument" %>
+<% end %>
+
+
+

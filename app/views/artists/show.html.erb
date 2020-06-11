@@ -1,0 +1,11 @@
+<hr color='red'>
+<h1>Atist: <%=@artist.name%></h1>
+<hr color='red'>
+<h3>Age: <%=@artist.age%></h3><br>
+<h3>Title: <%=@artist.title%></h3><br>
+<h4>Plays: 
+<ul>
+    <% @artist.instruments.each do |i| %>
+    <li><%=i.name%></li>
+    <% end %>
+</ul>
